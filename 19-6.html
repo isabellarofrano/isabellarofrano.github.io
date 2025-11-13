@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8" />
+    <title>title</title>
+    <style>
+        .celeste {
+            color: #00bfff;
+        }
+        .amarillo {
+            color: #ffd700;
+        }
+    </style>
+</head>
+<body>
+    <button onclick="agregarElemento()">Haz clic aquí</button>
+    <p>
+        <span class="celeste">aguante</span>
+        <span class="amarillo">boca</span>
+    </p>
+
+    <script>
+    function agregarElemento() {
+        // Crear un nuevo elemento <p>
+        const nuevoElemento = document.createElement('p');
+        nuevoElemento.textContent = '¡Nuevo elemento agregado!';
+        nuevoElemento.classList.add('celeste'); // Agrega la clase para el color
+        // Agregarlo al body
+        document.body.appendChild(nuevoElemento);
+    }
+    </script>    </script>
+</body></body>
+</html>
